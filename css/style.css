@@ -13,36 +13,8 @@ body {
   background-color: #e8e8e8;/*rgb(238, 234, 234);*/
   margin: 0;
   overflow-x: hidden;
- 
-}
-/*.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .9;
-  visibility: visible;
 }
 
-@keyframes bg-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
-}*/
 a {
   text-decoration: none;
   color: rgb(22, 22, 22);
@@ -80,18 +52,6 @@ img {
   #logo-section{
     max-width: 240px;
   }
-/*.logo-section::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: 50%;
-    bottom: 840vmin;
-    left: 5vmin;
-    backdrop-filter: invert(1);
-  }
-  .portfolio{
-    font-size: 50px;
-  }*/
 }
 /*nav-section*/
 .nav-section{
@@ -151,15 +111,6 @@ img {
   transition: all 0.3s ease-in-out;
   background-color: rgb(22, 22, 22);
 }
-/*@media (max-width: 600px){
-  .main-nav li{
-   padding: 13px 0px;
-   font-size: smaller;
-  }
-  .sidebar::after{
-    bottom: 540px;
-  }
-}*/
 @media only screen and (max-width: 600px) {
   .sidebar::after{
     display: none;
@@ -216,8 +167,6 @@ img {
   padding-top: 20px;
   padding-left: 16px;
   position: relative;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;*/
 }
 
 .outer-container {
@@ -306,9 +255,9 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 100vmin;
+  top: 120vmin;
   right: 50%;
-  bottom: 780vmin;
+  bottom: 800vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
