@@ -922,8 +922,9 @@ footer::after{
     justify-content: space-around;  
   }
   footer::after{
-    top: 96.9%;
-    right: 45%;
+    top: 97.5%;
+    left: 55%;
+    right: 0;
   }
   .footer-navi{
     flex-direction: column;
