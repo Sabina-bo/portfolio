@@ -257,7 +257,7 @@ img {
   position: absolute;
   top: 110vmin;
   right: 50%;
-  bottom: 600vmin;
+  bottom: 650vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
