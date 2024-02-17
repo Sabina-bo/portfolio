@@ -272,33 +272,7 @@ img {
 }
 .fade-in-bottom {
   font-size: 24px; 
-	/*-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;*/
 }
- /*@-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}*/
 .reveal{
   position: relative;
   opacity: 0;
@@ -391,22 +365,7 @@ padding-bottom: 100px;
 @keyframes blink{
   to{opacity: .0;}
 }
-/*.story{
-  background: #e5e5e5;
-    width: calc(50% + 1px);
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    padding: 10vmin;
-    box-shadow: -4px -4px 8px rgba(0,0,0,.4);
-.story-content{
-    width: 100%;
-    padding: 30px 30px 50px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.2);}
-}*/
+
 .story{
   width: 40%;
   min-width: 570px;
@@ -592,9 +551,6 @@ h3{
   .project-two{
     margin-top: 60px;
   }
-  .side-scroll-mobile{
-    display: block!important;
-  }
 }
 ::-webkit-scrollbar {
   width: 1px;
@@ -607,30 +563,100 @@ h3{
 .side-scroll, .side-scroll-mobile{
   font-size: 15.5px; 
 }
-.side-scroll-mobile{
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+.carousel-cell iframe{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected iframe */
+.carousel-cell.is-selected iframe {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: black;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
   display: none;
-}
-.horizontal-scroll-wrapper {
-  /*position: absolute;
-   top: 5700px;*/
-  display: block;
-  max-height: 900px;
-  margin: 150px;
-  padding-top: 1px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-1000px);
-  transform-origin: right top;
-}
-.horizontal-scroll-wrapper > div {
-  display: block;
-  padding: 5px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-}
-.squares > div {
-  height: 0px;
-  margin: 950px 0;
 }
 .others-container{
   display: flex;
@@ -642,90 +668,14 @@ h3{
   font-size: 15.5px;
   padding-bottom: 30px;
 }
-.flyers-container{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.flyers-container img{
-  height: 500px;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  -webkit-transform:scale(0.7);
-  transform:scale(0.7);
-}
-.flyers-container img:hover{
-  -webkit-transform:scale(1);
-  transform:scale(1);
-}
-.videos-container{
-  display: block;
-  max-height: 900px;
-  margin: 150px;
-  padding-top: 1px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-830px);
-  transform-origin: right top;
-}
-.videos-container > div {
-  display: block;
-  padding: 5px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-}
-.squares2 > div {
-  height: 0px;
-  margin: 1060px 0;
-}
 
 @media (max-width: 600px){
-.videos-container,.horizontal-scroll-wrapper{
-  max-height: 250px;
-  margin: 0px; 
-  transform: rotate(-90deg) translateY(-250px);
-}
-.horizontal-scroll-wrapper > div {
-  padding-top: 60px;
-}
-.squares > div{
-  margin: 250px 0;
-}
 .others-container{
   gap: 150px;
 }
 .others-discription{
   font-size: 15.5px;
   padding-bottom: 30px;
-}
-.flyers-container{
-  display: block;
-  max-height: 250px;
-  margin: 0px;
-  padding-top: 1px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-250px);
-  transform-origin: right top;
-}
-.flyers-container > div {
-  display: block;
-  padding: 0px;
-  transform: rotate(90deg);
-  transform-origin: right top;
-}
-.squares1 > div {
-  margin: 285px 0;
-}
-.flyers-container img{
-  height: 340px;
-}
-.videos-container{
-  transform: rotate(-90deg) translateY(-270px);
-}
-
-.squares2 > div{
-  margin: 570px 0;
 }
 }
 /*Contact*/
