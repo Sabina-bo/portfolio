@@ -255,9 +255,9 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 120vmin;
+  top: 110vmin;
   right: 50%;
-  bottom: 890vmin;
+  bottom: 600vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
@@ -841,7 +841,7 @@ footer{
 footer::after{
   content: '';
   position: absolute;
-  top: 86%;
+  top: 86.2%;
   left: 0;
   right: 50%;
   bottom: 0;
@@ -857,7 +857,7 @@ footer::after{
 }
 .gototop {
   position: absolute;
-  top: 97.5%;
+  top: 96%;
   right: 2rem;
   border-radius: 100%;
   animation: rotate-animation 20s infinite linear;
