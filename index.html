@@ -20,6 +20,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+
 </head>
 
 <body>
@@ -197,10 +199,16 @@
             <h2 class="projects-subtitle">サイトデザイン</h2>
             <p class="side-scroll">scroll　<i class="fa-solid fa-arrows-left-right" style="color: #000000;"></i></p>
         </div> 
-        <div class="horizontal-scroll-wrapper squares">
-            <div><img src="images/music.webp" alt="music festival" loading="lazy"></div>
-            <div><img src="images/ID.webp" alt="interior design" loading="lazy"></div>
-            <div><img src="images/lipstick.webp" alt="lipstick" loading="lazy"></div>
+        <div class="carousel js-flickity">
+            <div class="carousel-cell">
+                <img src="images/music.webp" alt="music festival" loading="lazy">
+            </div>
+            <div class="carousel-cell">
+                <img src="images/ID.webp" alt="interior design" loading="lazy">
+            </div>
+            <div class="carousel-cell">
+                <img src="images/lipstick.webp" alt="lipstick" loading="lazy">
+            </div>
         </div>
         <div class="fade-in-bottom reveal">
             <h2 class="projects-subtitle">その他制作</h2>
@@ -208,18 +216,18 @@
             <p class="side-scroll-mobile">scroll　<i class="fa-solid fa-arrows-left-right" style="color: #000000;"></i></p>
         </div>
         <div class="others-container">
-            <div class="flyers-container squares1">
-                <div><img src="images/Flyer_1.webp" alt="" loading="lazy"></div>
-                <div><img src="images/Flyer_2.webp" alt="" loading="lazy"></div>
-                <div><img src="images/Recipe.webp" alt="" loading="lazy"></div>
+              <div class="carousel js-flickity">
+                <div class="carousel-cell"><img src="images/Flyer_1.webp" alt="" loading="lazy"></div>
+                <div class="carousel-cell"><img src="images/Flyer_2.webp" alt="" loading="lazy"></div>
+                <div class="carousel-cell"><img src="images/Recipe.webp" alt="" loading="lazy"></div>
             </div>
             <div class="fade-in-bottom reveal"> <p class="side-scroll">scroll　<i class="fa-solid fa-arrows-left-right" style="color: #000000;"></i></p></div>
-            <div class="videos-container squares2">
-                <div class="videoWrapper"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/1q8Vw8OfZnY?si=w6TKe4TDQX6uG-6f_&amp;controls=0" allowfullscreen></iframe></div>
-                <div class="videoWrapper"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/w1a4m8nYOKg?si=rc80T1H8Vi_wj7ju_&amp;controls=0" allowfullscreen></iframe></div>
-                <div class="videoWrapper"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/xAA5qjOSPvQ?si=eL_pSspqjOvMaV1r_&amp;controls=0" allowfullscreen></iframe></div>
-                <div class="videoWrapper"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/5wC99LLlnTA?si=nqw9X2jpvBoCnYW_&amp;controls=0" allowfullscreen></iframe></div>
-                <div class="videoWrapper"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/qtSrlsVWlpc?si=WwepRmoL0FRRfFuo&amp;controls=0" allowfullscreen></iframe></div>
+             <div class="carousel js-flickity">
+                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/1q8Vw8OfZnY?si=w6TKe4TDQX6uG-6f_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/w1a4m8nYOKg?si=rc80T1H8Vi_wj7ju_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/xAA5qjOSPvQ?si=eL_pSspqjOvMaV1r_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/5wC99LLlnTA?si=nqw9X2jpvBoCnYW_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
+                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/qtSrlsVWlpc?si=WwepRmoL0FRRfFuo&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
             </div>
         </div>
     </section>
@@ -287,5 +295,5 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/87828b2d56.js" crossorigin="anonymous"></script>
-
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 </body>
