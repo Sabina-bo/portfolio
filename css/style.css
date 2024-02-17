@@ -299,7 +299,7 @@ padding-top: 100px;
 padding-bottom: 100px;
   }
 #about-section::after{ 
-  bottom: 1000vmin;
+  bottom: 1050vmin;
   top: 245vmin;
   left:0;
 }
