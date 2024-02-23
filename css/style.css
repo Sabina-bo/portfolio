@@ -12,37 +12,8 @@ body {
   position: relative;
   background-color: #e8e8e8;/*rgb(238, 234, 234);*/
   margin: 0;
-  overflow-x: hidden;
- 
+  overflow-x: hidden; 
 }
-/*.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .9;
-  visibility: visible;
-}
-
-@keyframes bg-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
-}*/
 a {
   text-decoration: none;
   color: rgb(22, 22, 22);
@@ -287,9 +258,9 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 100vmin;
+  top: 110vmin;
   right: 50%;
-  bottom: 600vmin;
+  bottom: 650vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
@@ -894,7 +865,7 @@ footer{
 footer::after{
   content: '';
   position: absolute;
-  top: 88%;
+  top: 86.5%;
   left: 0;
   right: 50%;
   bottom: 0;
@@ -936,7 +907,7 @@ footer::after{
    
   }
   .gototop{
-    top: 97%;
+    top: 96.9%;
     right: 2rem;
   }
 }
