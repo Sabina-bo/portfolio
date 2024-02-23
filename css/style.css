@@ -13,8 +13,36 @@ body {
   background-color: #e8e8e8;/*rgb(238, 234, 234);*/
   margin: 0;
   overflow-x: hidden;
+ 
+}
+/*.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
 }
 
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}*/
 a {
   text-decoration: none;
   color: rgb(22, 22, 22);
@@ -27,7 +55,7 @@ ul {
 
 img {
   max-width: 100%;
-  /*height: auto;*/
+  height: auto;
   vertical-align: top;
 }
 
@@ -111,6 +139,7 @@ img {
   transition: all 0.3s ease-in-out;
   background-color: rgb(22, 22, 22);
 }
+
 @media only screen and (max-width: 600px) {
   .sidebar::after{
     display: none;
@@ -136,9 +165,11 @@ img {
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
-      padding-top: 16px;
+    display: block;
+    position: fixed; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+    cursor: pointer;
   }
 
   .hamburger.active .line:nth-child(2) {
@@ -167,6 +198,8 @@ img {
   padding-top: 20px;
   padding-left: 16px;
   position: relative;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;*/
 }
 
 .outer-container {
@@ -215,7 +248,6 @@ img {
  -webkit-border-radius: 200px 0px 0px 0px;
  -moz-border-radius: 200px 0px 0px 0px;
 }
-
 .circle {
   position: absolute;
   top: 100px;
@@ -255,9 +287,9 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 110vmin;
+  top: 100vmin;
   right: 50%;
-  bottom: 650vmin;
+  bottom: 600vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
@@ -272,7 +304,10 @@ img {
 }
 .fade-in-bottom {
   font-size: 24px; 
+	/*-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;*/
 }
+
 .reveal{
   position: relative;
   opacity: 0;
@@ -299,7 +334,7 @@ padding-top: 100px;
 padding-bottom: 100px;
   }
 #about-section::after{ 
-  bottom: 1050vmin;
+  bottom: 1100vmin;
   top: 245vmin;
   left:0;
 }
@@ -550,6 +585,7 @@ h3{
   .project-two{
     margin-top: 60px;
   }
+ 
 }
 ::-webkit-scrollbar {
   width: 1px;
@@ -562,6 +598,7 @@ h3{
 .side-scroll, .side-scroll-mobile{
   font-size: 15.5px; 
 }
+
 .carousel-cell {
   width: 70%;
   height: 200px;
@@ -574,6 +611,21 @@ h3{
           justify-content: center;
   -webkit-align-items: center;
           align-items: center;
+          iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+          a {
+            /* lityを動かすためにiframeを覆う */
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
 }
 
 .carousel-cell img{
@@ -631,7 +683,6 @@ h3{
     width: 60%;
   }
 }
-
 /* buttons, no circle */
 .flickity-prev-next-button {
   width: 60px;
@@ -657,6 +708,7 @@ h3{
 .flickity-prev-next-button:disabled {
   display: none;
 }
+
 .others-container{
   display: flex;
   flex-direction: column;
@@ -669,6 +721,7 @@ h3{
 }
 
 @media (max-width: 600px){
+
 .others-container{
   gap: 150px;
 }
@@ -676,6 +729,7 @@ h3{
   font-size: 15.5px;
   padding-bottom: 30px;
 }
+
 }
 /*Contact*/
 #contact-section{
@@ -840,7 +894,7 @@ footer{
 footer::after{
   content: '';
   position: absolute;
-  top: 86.5%;
+  top: 88%;
   left: 0;
   right: 50%;
   bottom: 0;
@@ -871,17 +925,18 @@ footer::after{
     justify-content: space-around;  
   }
   footer::after{
-    top: 97.5%;
-    left: 55%;
-    right: 0;
+   top: 97.5%;
+   left: 55%;
+   right: 0;
   }
   .footer-navi{
     flex-direction: column;
     row-gap: 40px;
     align-items: center;
+   
   }
   .gototop{
-    top: 96.9%;
+    top: 97%;
     right: 2rem;
   }
 }

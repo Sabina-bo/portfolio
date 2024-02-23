@@ -17,42 +17,6 @@ function closeMenu() {
     mainNav.classList.remove("active");
 }
 
-//Rotating circle//
-/*
-const degreeToRadian = (angle) => {
-    return angle * (Math.PI / 180);
-  };
-  
-  const radius = 80;
-  const diameter = radius * 2;
-  
-  const circle = document.querySelector(".circle");
-  const gototop = document.querySelector(".gototop");
-
-  circle.style.width = `${diameter}px`;
-  circle.style.height = `${diameter}px`;
-  
-  const text = circle.dataset.text;
-  const characters = text.split("");
-  
-  const deltaAngle = 360 / characters.length;
-  const characterOffsetAngle = 8;
-  let currentAngle = -90;
-  
-  characters.forEach((character, index) => {
-    const span = document.createElement("span");
-    span.innerText = character;
-    const xPos = radius * (1 + Math.cos(degreeToRadian(currentAngle)));
-    const yPos = radius * (1 + Math.sin(degreeToRadian(currentAngle)));
-  
-    const transform = `translate(${xPos}px, ${yPos}px)`;
-    const rotate = `rotate(${(index * deltaAngle) + characterOffsetAngle}deg)`;
-    span.style.transform = `${transform} ${rotate}`;
-  
-    currentAngle += deltaAngle;
-    circle.appendChild(span);
-  });
-*/
 // Function to generate rotating effect
 const createRotatingEffect = (element) => {
   const degreeToRadian = (angle) => {
@@ -123,28 +87,12 @@ const raf = () => {
 requestAnimationFrame(raf);
 window.addEventListener('scroll', scrollInProgress)
 
-//Entrance animation
-/*const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
-    entries.forEach(entry => {
-      // If the element is visible
-      if (entry.isIntersecting) {
-        // Add the animation class
-        entry.target.classList.add('revealText-animation');
-      }
-    });
-  });
-  
-  const viewbox = document.querySelectorAll('.revealText');
-  viewbox.forEach(revealText => {
-    observer.observe(revealText);
-  });*/
-
   //fade-in-bottom
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
     for (var i = 0; i < reveals.length; i++) {
+
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementVisible = 150;
@@ -177,3 +125,4 @@ window.addEventListener("scroll", reveal);
  animatedElement.forEach(element => {
   observer.observe(element);
 });
+

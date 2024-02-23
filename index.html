@@ -20,19 +20,23 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <!--Flickity-->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <!--Lity-->
+    <link rel="stylesheet" href="dist/lity.css">
 </head>
+
 <body>
     <div class="bg"></div>
+
     <!--Top-->
     <section id="logo-section">
         <div class="logo-container">
-            <a href="top-page.html">
+            <a href="index.html">
                 <p>Sabina Rakhmatuloeva's</p>
                 <h1 class="portfolio">Portfolio</h1>
             </a>
         </div>
-        
         <nav class="sidebar">
             <ul class="main-nav">
                 <li class="nav-item"><a class="underline" href="#about-section">About</a></li>
@@ -66,8 +70,7 @@
             <div class="profile-pic">
             <img src="images/profile-pic-removebg-preview.webp" alt="profile-pic" loading="lazy">
             </div>
-            <div class="circle" data-text="GET IN TOUCH&nbsp;">
-            </div> 
+            <a href="#contact-section"><div class="circle" data-text="GET IN TOUCH&nbsp;"></div></a>
         </section>  
     </main>
   
@@ -92,7 +95,7 @@
                 <span id="blink">|</span>
                 </h2>
                 <div class="tst-bg-container">
-                <img src="images/Black Clay Isometric Apple Devices (1).webp" alt="PC" loading="lazy"> 
+                <img src="images/PC.webp" alt="PC" loading="lazy"> 
                 </div>
             </div>
             <div class="story">
@@ -152,11 +155,11 @@
             <h1 class="projects-title">Projects</h1>
         <h2 class="projects-subtitle">サイト制作</h2>
         </div>
-        <div class="projects-container">
+        <div class="projects-container">   
             <div class="project-one">
-		    <p class="fade-in-bottom reveal">click　<i class="fa-solid fa-computer-mouse"></i></p>
+                <p class="fade-in-bottom reveal">click　<i class="fa-solid fa-computer-mouse"></i></p>
                 <div class="project-image">
-                    <a href="https://sabina-bo.github.io/choikhona/">
+                    <a href="top-page.html">
                     <img src="images/restaurant.webp" alt="レストランサイトのモックアップ" loading="lazy"></a>
                 </div>
                 <div class="fade-in-bottom reveal">
@@ -173,9 +176,9 @@
                 </div>
             </div>
             <div class="project-two">
-		    <p class="fade-in-bottom reveal">click　<i class="fa-solid fa-computer-mouse"></i></p>
+                <p class="fade-in-bottom reveal">click　<i class="fa-solid fa-computer-mouse"></i></p>
                 <div class="project-image">
-                    <a href="https://sabina-bo.github.io/cooking-class/">
+                    <a href="top-page.html">
                     <img src="images/cooking-class.webp" alt="料理教室サイトのモックアップ" loading="lazy"></a>  
                 </div>
                 <div class="fade-in-bottom reveal">
@@ -198,33 +201,50 @@
         </div> 
         <div class="carousel js-flickity">
             <div class="carousel-cell">
-                <img src="images/music.webp" alt="music festival" loading="lazy">
+                <img src="images/music.webp" alt="music festival" loading="lazy" data-lity>
             </div>
             <div class="carousel-cell">
-                <img src="images/ID.webp" alt="interior design" loading="lazy">
+                <img src="images/ID.webp" alt="interior design" loading="lazy" data-lity>
             </div>
             <div class="carousel-cell">
-                <img src="images/lipstick.webp" alt="lipstick" loading="lazy">
+                <img src="images/lipstick.webp" alt="lipstick" loading="lazy" data-lity>
             </div>
         </div>
+        
         <div class="fade-in-bottom reveal">
             <h2 class="projects-subtitle">その他制作</h2>
             <p class="others-discription">前職ではチラシや広報誌などのデザイン及びYouTube動画用のイラスト作成を担当した経験があります。</p>
             <p class="side-scroll-mobile">scroll　<i class="fa-solid fa-arrows-left-right" style="color: #000000;"></i></p>
         </div>
         <div class="others-container">
-              <div class="carousel js-flickity">
-                <div class="carousel-cell"><img src="images/Flyer_1.webp" alt="" loading="lazy"></div>
-                <div class="carousel-cell"><img src="images/Flyer_2.webp" alt="" loading="lazy"></div>
-                <div class="carousel-cell"><img src="images/Recipe.webp" alt="" loading="lazy"></div>
+            <div class="carousel js-flickity">
+                <div class="carousel-cell"><img src="images/Flyer_1.webp" alt="" loading="lazy" data-lity></div>
+                <div class="carousel-cell"><img src="images/Flyer_2.webp" alt="" loading="lazy" data-lity></div>
+                <div class="carousel-cell"><img src="images/Recipe.webp" alt="" loading="lazy" data-lity></div>
+                <div class="carousel-cell"><img src="images/News.webp" alt="" loading="lazy" data-lity></div>
             </div>
             <div class="fade-in-bottom reveal"> <p class="side-scroll">scroll　<i class="fa-solid fa-arrows-left-right" style="color: #000000;"></i></p></div>
-             <div class="carousel js-flickity">
-                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/1q8Vw8OfZnY?si=w6TKe4TDQX6uG-6f_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
-                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/w1a4m8nYOKg?si=rc80T1H8Vi_wj7ju_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
-                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/xAA5qjOSPvQ?si=eL_pSspqjOvMaV1r_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
-                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/5wC99LLlnTA?si=nqw9X2jpvBoCnYW_&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
-                <div class="carousel-cell"><iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/qtSrlsVWlpc?si=WwepRmoL0FRRfFuo&amp;controls=0" allowfullscreen loading="lazy"></iframe></div>
+            <div class="carousel js-flickity">
+                <div class="carousel-cell">
+                    <iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/1q8Vw8OfZnY?si=w6TKe4TDQX6uG-6f_&amp;controls=0" allowfullscreen loading="lazy"></iframe>
+                    <a href="https://www.youtube.com/embed/1q8Vw8OfZnY?si=w6TKe4TDQX6uG-6f_&amp;controls=0" data-lity></a>
+                </div>    
+                <div class="carousel-cell">
+                    <iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/w1a4m8nYOKg?si=rc80T1H8Vi_wj7ju_&amp;controls=0" allowfullscreen loading="lazy"></iframe>
+                    <a href="https://www.youtube.com/embed/w1a4m8nYOKg?si=rc80T1H8Vi_wj7ju_&amp;controls=0" data-lity></a>
+                </div>
+                <div class="carousel-cell">
+                    <iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/xAA5qjOSPvQ?si=eL_pSspqjOvMaV1r_&amp;controls=0" allowfullscreen loading="lazy"></iframe>
+                    <a href="https://www.youtube.com/embed/xAA5qjOSPvQ?si=eL_pSspqjOvMaV1r_&amp;controls=0" data-lity></a>
+                </div>
+                <div class="carousel-cell">
+                    <iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/5wC99LLlnTA?si=nqw9X2jpvBoCnYW_&amp;controls=0" allowfullscreen loading="lazy"></iframe>
+                    <a href="https://www.youtube.com/embed/5wC99LLlnTA?si=nqw9X2jpvBoCnYW_&amp;controls=0" data-lity></a>
+                </div>
+                <div class="carousel-cell">
+                    <iframe title="projectsVideo" width="560" height="315" src="https://www.youtube.com/embed/qtSrlsVWlpc?si=WwepRmoL0FRRfFuo&amp;controls=0" allowfullscreen loading="lazy"></iframe>
+                    <a href="https://www.youtube.com/embed/qtSrlsVWlpc?si=WwepRmoL0FRRfFuo&amp;controls=0" data-lity></a>
+                </div>
             </div>
         </div>
     </section>
@@ -293,4 +313,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/87828b2d56.js" crossorigin="anonymous"></script>
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="vendor/jquery.js"></script>
+    <script src="dist/lity.js"></script>
+    
 </body>
