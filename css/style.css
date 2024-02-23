@@ -881,7 +881,7 @@ footer::after{
 }
 .gototop {
   position: absolute;
-  top: 96%;
+  top: 96.9%;
   right: 2rem;
   border-radius: 100%;
   animation: rotate-animation 20s infinite linear;
