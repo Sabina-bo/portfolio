@@ -287,9 +287,9 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 100vmin;
+  top: 80vmin;
   right: 50%;
-  bottom: 650vmin;
+  bottom: 500vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
