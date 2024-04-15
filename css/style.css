@@ -905,7 +905,7 @@ footer{
 footer::after{
   content: '';
   position: absolute;
-  top: 88%;
+  top: 84%;
   left: 0;
   right: 50%;
   bottom: 0;
