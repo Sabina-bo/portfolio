@@ -12,8 +12,37 @@ body {
   position: relative;
   background-color: #e8e8e8;/*rgb(238, 234, 234);*/
   margin: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+ 
 }
+/*.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}*/
 a {
   text-decoration: none;
   color: rgb(22, 22, 22);
@@ -258,7 +287,7 @@ img {
 #about-section::after{
   content: '';
   position: absolute;
-  top: 110vmin;
+  top: 100vmin;
   right: 50%;
   bottom: 650vmin;
   left: 5vmin;
@@ -305,7 +334,7 @@ padding-top: 100px;
 padding-bottom: 100px;
   }
 #about-section::after{ 
-  bottom: 1100vmin;
+  bottom: 1200vmin;
   top: 245vmin;
   left:0;
 }
@@ -424,6 +453,15 @@ padding-bottom: 100px;
       width: 83%;
   }
 } 
+#prpro-bar{
+  animation: prpro-fill 4s forwards;
+}
+@keyframes prpro-fill{
+  100%{
+    width: 80%;
+}
+}   
+
 #html-bar{
   animation: html-fill 4s forwards;
 }
@@ -865,7 +903,7 @@ footer{
 footer::after{
   content: '';
   position: absolute;
-  top: 87%;
+  top: 88%;
   left: 0;
   right: 50%;
   bottom: 0;
@@ -881,7 +919,7 @@ footer::after{
 }
 .gototop {
   position: absolute;
-  top: 96.6%;
+  top: 97%;
   right: 2rem;
   border-radius: 100%;
   animation: rotate-animation 20s infinite linear;
@@ -907,7 +945,7 @@ footer::after{
    
   }
   .gototop{
-    top: 96.9%;
+    top: 97%;
     right: 2rem;
   }
 }
