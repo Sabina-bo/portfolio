@@ -804,7 +804,7 @@ padding: 0 84px;
 
 .contactForm{
   width: 50%;
-  padding: 70px 40px;
+  padding: 160px 40px;
   background-color: white;
 }
 
@@ -887,6 +887,7 @@ textarea {
     width: 60px;
     height: 60px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   .contactForm button:hover{
     border-radius: 23px;
@@ -919,7 +920,7 @@ footer::after{
 }
 .gototop {
   position: absolute;
-  top: 97%;
+  top: 96%;
   right: 2rem;
   border-radius: 100%;
   animation: rotate-animation 20s infinite linear;
