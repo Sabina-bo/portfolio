@@ -531,7 +531,9 @@ padding: 10px 84px;
   justify-content: center;
   align-items: center;
 }
-
+.project-one, .project-two{
+  padding: 70px;
+}
 .projects-container img{
   width: 100%;
   -webkit-transition: all 0.7s ease;
