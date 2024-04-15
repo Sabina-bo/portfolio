@@ -605,6 +605,7 @@ h3{
 }
 .side-scroll, .side-scroll-mobile{
   font-size: 15.5px; 
+  padding: 70px 70px 0;
 }
 
 .carousel-cell {
