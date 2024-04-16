@@ -871,7 +871,7 @@ textarea {
     padding: 100px 40px;
   }
   #contact-section p{
-    font-size: 16px;
+    font-size: 14px;
   }
   .contact-title{
     font-size: 40px;
@@ -892,10 +892,10 @@ textarea {
     padding: 40px 20px;
   }
   .contactForm label{
-    font-size: 16px;
+    font-size: 14px;
   }
   .button-container{
-    font-size: 16px;
+    font-size: 14px;
   }
   .contactForm button{
     width: 60px;
@@ -957,7 +957,7 @@ footer::after{
     flex-direction: column;
     row-gap: 40px;
     align-items: center;
-   
+    font-size: 14px;
   }
   .gototop{
     top: 97%;
