@@ -337,7 +337,7 @@ padding-top: 100px;
 padding-bottom: 100px;
   }
 #about-section::after{ 
-  bottom: 1200vmin;
+  bottom: 1400vmin;
   top: 245vmin;
   left:0;
 }
@@ -596,7 +596,9 @@ h3{
   .project-two{
     margin-top: 60px;
   }
- 
+ .project-one, .project-two{
+  padding: 10px;
+}
 }
 ::-webkit-scrollbar {
   width: 1px;
