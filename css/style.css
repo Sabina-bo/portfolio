@@ -75,6 +75,9 @@ img {
   .portfolio{
     font-size: 62px;
   }
+.logo-container p{
+  font-size: 24px
+}
 }
 @media (max-width: 400px){
   #logo-section{
