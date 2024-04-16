@@ -337,7 +337,7 @@ padding-top: 100px;
 padding-bottom: 100px;
   }
 #about-section::after{ 
-  bottom: 1400vmin;
+  bottom: 1450vmin;
   top: 245vmin;
   left:0;
 }
@@ -577,6 +577,11 @@ h3{
 .projects-container p{
   font-size: 16px;
 }
+.side-scroll, .side-scroll-mobile{
+  font-size: 16px; 
+  padding: 70px 70px 0;
+}
+
 @media (max-width: 600px){
   #projects-section{
     padding: 10px 40px;
@@ -614,10 +619,6 @@ h3{
 ::-webkit-scrollbar-button {
   width: 1px;
   height: 1px;
-}
-.side-scroll, .side-scroll-mobile{
-  font-size: 16px; 
-  padding: 70px 70px 0;
 }
 
 .carousel-cell {
