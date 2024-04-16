@@ -605,7 +605,7 @@ h3{
 .side-scroll, .side-scroll-mobile{
   font-size: 14px; 
   padding: 60px 60px 0;
-}
+  }
 }
 ::-webkit-scrollbar {
   width: 1px;
