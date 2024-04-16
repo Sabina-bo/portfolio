@@ -593,11 +593,18 @@ h3{
     flex-wrap: wrap;
     padding-top: 40px;
   }
+.projects-container p{
+  font-size: 14px;
+}
   .project-two{
     margin-top: 60px;
   }
  .project-one, .project-two{
   padding: 10px;
+}
+.side-scroll, .side-scroll-mobile{
+  font-size: 16px; 
+  padding: 60px 60px 0;
 }
 }
 ::-webkit-scrollbar {
@@ -737,7 +744,7 @@ h3{
 @media (max-width: 600px){
 
 .others-container{
-  gap: 150px;
+  gap: 60px;
   padding: 40px 0;
 }
 .others-discription{
