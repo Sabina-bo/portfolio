@@ -292,7 +292,7 @@ img {
   position: absolute;
   top: 80vmin;
   right: 50%;
-  bottom: 500vmin;
+  bottom: 600vmin;
   left: 5vmin;
   outline-offset: -5vmin;
   backdrop-filter: invert(1);
